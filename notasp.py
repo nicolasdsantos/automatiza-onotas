@@ -2,7 +2,7 @@ import pandas as pd
 import xmltodict
 import os
 
-caminho_pasta = r'G:\Drives compartilhados\MIS\07. Automatizações\01. Proc to Pay\Entrada de Notas'
+caminho_pasta = r'C:\Users\Nicolas\Desktop\Notas'
 
 # Ler os arquivos da pasta
 arquivos = os.listdir(caminho_pasta)
@@ -108,6 +108,6 @@ df_final = df_final[['N DE REFERENCIA', 'NOME DO FORNECEDOR', 'ID FORNECEDOR', '
 
 
 # Salve o DataFrame em um arquivo Excel
-excel_file_path = r'G:\Drives compartilhados\MIS\07. Automatizações\01. Proc to Pay\Entrada de Notas\Planilha Automatizada\Planilha Automatizada.xlsx'
+excel_file_path = r'C:\Users\Nicolas\Desktop\Notas\Automatizado\Planilha notas Automatizada.xlsx'
 df_final.to_excel(excel_file_path, index=False, engine='openpyxl')
 

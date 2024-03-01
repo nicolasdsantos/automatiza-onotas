@@ -7,7 +7,7 @@ Este projeto automatiza a coleta de informações de Notas Fiscais (NFs) em form
 
 ## 🚀 Features 🚀
 - Caso tenha valor de frete na nota ele é lançado como um item 
-- caso não tenha frete não adiciona.
+- Caso não tenha frete não adiciona.
 - Cada Item é coletado e lançado um por linha
 - Pode coletar dados simultaneamente de varias NFs e é lançado em ordem para cada Nota 
 

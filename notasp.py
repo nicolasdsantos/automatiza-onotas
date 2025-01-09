@@ -4,10 +4,8 @@ import os
 
 caminho_pasta = r'C:\Users\Nicolas\Desktop\Notas'
 
-# Ler os arquivos da pasta
 arquivos = os.listdir(caminho_pasta)
 
-# Criar lista auxiliar para receber os valores
 lista_arquivos = []
 for arquivo in arquivos:
     if 'xml' in arquivo and 'DANFE' in arquivo:
@@ -24,8 +22,7 @@ def ler_xml_danfe(nota):
 
         produtos = dict_notafiscal['det']
         if isinstance(produtos, dict):
-            produtos = [produtos]  # Converta para lista se houver apenas um produto
-
+            produtos = [produtos]  
         lista_produtos = []
         for produto in produtos:
             quantidade = float(produto['prod']['qCom'])  # Convertendo para float
